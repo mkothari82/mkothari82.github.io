@@ -1,0 +1,172 @@
+/*
+Quick.Cms default stylesheet
+More about design modifications - http://opensolution.org/Quick.Cms/docs/?id=en-design
+*/
+
+/* GLOBAL STYLES */
+body,h1,h2,h3,h4,h5,h6,p,form,fieldset,img,ul{margin:0;padding:0;border:0;}
+body,table{background-color:#fff;color:#4e4e3d;font-size:0.8em;font-family:Arial, Helvetica, sans-serif;}
+#425a77
+body{padding:0;background:#fff; url('../images/bg.gif') repeat-x left top;text-align:center;}
+
+.input, select, textarea{padding:2px;border-top:2px solid #cabfbf;border-right:1px solid #e7e4e4;border-bottom:1px solid #e7e4e4;border-left:1px solid #cabfbf;font:1em Arial, sans-serif;}
+.submit{padding:5px 14px;border-width:1px;border-style:solid;border-color:#bbc9db #4d6991 #4d6991 #bbc9db;background:#6988b1;color:#4e4e3d; font:bold 1em Arial, sans-serif;}
+.submit:hover{background:#859ec0;cursor:pointer;}
+* html .submit{padding:3px 1px !important;}
+* html .input{height:28px;}
+.form{background:#f8f8f7;border:1px solid #eeecea;}
+.form label{font-size:1em;color:#cc0000;font-weight:bold;}
+.form table{background:#f8f8f7;}
+.hide{display:none;}
+
+a{background-color:inherit;color:#425a77;text-decoration:underline;}
+a:hover{background-color:inherit;color:#cc0000;text-decoration:underline;}
+
+.clear{clear:both;height:0px;font-size:0px;line-height:0px;}
+.skiplink{position:absolute;top:-500px;left:0px;overflow:hidden;}
+.left{text-align:left;}
+.center{text-align:center;}
+.right{text-align:right;}
+
+#container{position:relative;width:100%;margin:0 auto;padding:0;}
+#head1, #head2, #head3, #body, #foot{float:left;width:100%;margin:0 auto;padding:0;}
+.container{width:960px;margin:0 auto;text-align:left;}
+
+
+
+
+
+/* MENU TOP */
+#head2{position:absolute;left:0;top:32px;background:#bbc9db;}
+#menu1{float:left;height:45px;margin:0;list-style:none;}
+#menu1 li{float:left;padding:8px 8px 0;list-style:none;}
+#menu1 li a{float:left;padding:8px 10px 10px;color:#4e4e3d;font:bold 1.17em 'Trebuchet MS';text-decoration:none;text-transform:uppercase;border-left:0px solid #f3f2f1;border-right:0px solid #f3f2f1;border-top:0px solid #f3f2f1;border-bottom:0px solid #f3f2f1;}
+#menu1 li a:hover, #menu1 .selected a{border:1px solid #e6e3e3;border-bottom:1px;background-color:#fff;color:#4d6991;text-decoration:underline;}
+
+/* LOGO, HEADER BACKGROUND AND SLOGAN */
+#head1{clear:both;margin-top:45px;background-color:#fff;}
+#head1 .container{height:100px;background:url('../images/IGCl_blue.JPG_1.jpg') ;}
+#head1 .container{height:100px;}
+#logo{padding:50px 10px 10px;}
+#logo #title{float:right;padding:10px 10px 10px;}
+/*#logo #title a{color:#6988b1;font:bold 5.5em 'Arial';text-transform:uppercase;text-decoration:none;}
+#logo #title a span{color:#cc0000;}
+#logo #title a strong{color:#cc0000;}*/
+#logo #slogan{clear:right;float:right;padding:0px 20px 10px;background:inherit;color:#425a77;font:italic 1.333em Georgia;}
+
+/* NAVIGATION PATH - TREE */
+#page h4{padding:2px 0 10px;color:#a6aeb3;background:inherit;font-size:1em;}
+#page h4 a{background-color:inherit;color:#a6aeb3;text-decoration:none;font-weight:normal;}
+#page h4 a:hover{background-color:#bbc9db;color:#a6aeb3;text-decoration:none;}
+*:first-child+html #page h4{top:-5px;} /* IE 7 hack */
+* html #page h4{top:-5px;} /* IE 6 hack */
+
+/* BODY STYLES - LEFT AND RIGHT COLUMN */
+#body{clear:both;margin:0;}
+#body .container{overflow:hidden;background:#fff url('../images/two_columns.gif') repeat-y 0px 10px;border-top:1px solid #e6e3e3;}
+
+/* LEFT COLUMN STYLES */
+#column{float:left;width:270px;padding:10px 0;}
+#column .type{padding:10px 0;background:inherit;color:#4e4e3d;font:normal 1.75em serif;}
+#menu2{padding:0 20px 10px;}
+
+/* LEFT MENU */
+#menu2 ul{margin:4px 0;list-style:none;border-bottom:1px dashed #d0caca;font-family:'Trebuchet MS';}
+#menu2 a{display:block;width:96%;padding:6px 2%;border-top:1px dashed #d0caca;background:inherit;color:#cc0000;font-size:1.083em;text-decoration:none;}
+#menu2 a:hover, #menu3 .sub1 a:hover{background-color:#f7f5f4;color:#cc0000;text-decoration:underline;}
+#menu2 .selected{background-color:inherit;color:#cc0000;text-decoration:underline;}
+
+#menu2 .sub1{margin:0;padding:0 0 10px  0;border:0;}
+#menu2 .sub1 a{display:block;width:75%;padding:2px 10% 2px 15%;border:0;background:url('../images/circle.png') no-repeat 14px 8px;}
+* html #menu2 a, * html #menu2 .sub1 a{width:100%;}
+
+/* RIGHT COLUMN STYLES */
+#content{float:left;width:690px;padding:10px 0 5px;text-align:center;}
+* html #content{width:660px;}
+#page{width:94%;margin:0 auto;text-align:left;}
+
+#page h1{padding:10px 0 10px;background:inherit;color:#4e4e3d;font:normal 2.58em serif;}
+#page div.content{font:1.083em arial;}
+
+#page div.content ul, .subpagesList li ol{margin:0 0 0 30px;padding:0;}
+#page div.content li{margin:8px 0;padding:0;border-left:0;}
+#page div.content p{padding-bottom:10px;}
+
+.pages{padding:8px 0;text-align:right;font-size:1.083em;}
+.pages ul, .pages li{display:inline;}
+.pages li{padding:0 2px;}
+.pages a, .pages strong{padding:0 1px;font-size:1.083em;}
+
+/* IMAGES STYLES */
+.imagesList{list-style:none;}
+.imagesList li{margin:0 0 15px 0;background:inherit;color:#5b5b5b;font-size:0.917em;text-align:center;}
+.imagesList li img{border:2px solid #e6e3e3;}
+.imagesList li div{text-align:center;}
+.imagesList li img:hover{border-color:#d7d2d2;}
+
+#imagesList1{float:left;margin:10px 20px 0 0;}
+#imagesList2{clear:right;float:right;margin:10px 0 0 15px;}
+
+/* FILES LIST STYLES */
+#filesList{padding:10px 0 5px;list-style:none;vertical-align:middle;}
+#filesList li{margin:0 0 6px;}
+#filesList img{margin:0 8px 0 0;vertical-align:middle;}
+#filesList em{padding-left:2px;background:inherit;color:#5b5b5b;}
+
+/* SUB PAGES LIST STYLES */
+.subpagesList{float:left;width:100%;margin:7px 0;list-style:none;}
+.subpagesList li{clear:left;float:left;width:96%;margin:5px 0;padding:8px 2%;background:#f9f9f9;border-left:1px dashed #e6e3e3;}
+* html .subpagesList li{width:100%;}
+.subpagesList li .photo{float:left;margin:0 13px 5px 0;}
+.subpagesList li img{border:2px solid #e6e3e3;}
+.subpagesList li img:hover{border-color:#d7d2d2;}
+.subpagesList li h2{padding-bottom:5px;}
+.subpagesList li h2, .subpagesList li h2 a{background:inherit;color:#cc0000;font:normal 1.25em serif;}
+.subpagesList li h2 a:hover{background:inherit;color:#4e4e3d;}
+.subpagesList li .description{font-weight:normal;font-size:1em;}
+.subpagesList li ul, .subpagesList li ol{float:left;width:100%;margin:5px 0 0 30px;padding:0;}
+.subpagesList li li{padding:0;border-left:0;}
+.subpagesList li ul{list-style:disc;}
+.subpagesList li ol{list-style:decimal;}
+.subpagesList li p{padding-bottom:10px;}
+
+/* OPTIONS LINK */
+#options{clear:both;float:right;width:100%;margin:10px 10px;background:inherit;color:#7f7f66;font-size:1em;text-align:right;}
+#options a{padding:0 10px 0;}
+#options .back, #options .print{float:right;}
+#options .print a{border-left:1px solid #7f7f66;}
+
+.message{padding:50px 0;text-align:center;}
+.message h3{background:inherit;color:#cc0000;font:normal 2.58em serif;}
+
+/* ADDITIONAL COLUMN */
+#column2{display:none;float:right;width:100px;}
+
+/* FOOTER - SITE AND SCRIPT COPYRIGHTS STYLES */
+#foot{clear:both;padding:15px 0;border-top:1px solid #e6e3e3;background:#f3f2f1;color:#4e4e3d;font-size:1.083em;font-weight:bold;}
+#foot .container{width:960px;margin:0 auto;}
+#foot a{background:inherit;color:#4e4e3d;text-decoration:none;}
+#foot a:hover{text-decoration:underline;}
+
+#copy{float:left;padding:0 10px;}
+.foot{float:right;padding:0 10px;}
+
+@media print{
+  /* PRINT STYLES */
+  * {color:#000 !important;background:#fff !important;border-color:#444 !important;border-width:1px !important;}
+ body{margin:1cm 0;}
+  #container{width:17.2cm;height:auto;}
+  #head1 .container, #head1{height:auto;}
+  #logo{padding:0 0 0.2cm;}
+  #head1 .container, #head2 .container, #body .container, #foot .container{border-width:0px !important;}
+
+  #body{clear:none;}
+  #body .container{overflow:visible;}
+  #logo #title, #page h1{padding:0;}
+  #page h4{position:relative;top:0;}
+
+  #header .container, #body .container, #foot .container, #content, #page{float:none;width:17.2cm;padding:0;margin:0;}
+  #column, #head2, #back{display:none;}
+}
+
+/* PLUGINS */
